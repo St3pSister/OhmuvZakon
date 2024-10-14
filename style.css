@@ -1,10 +1,13 @@
 /* Hlavní nadpis */
 h1 {
-    text-align: center;
-    color: black;
+    position: absolute;
+    top: 20px; /* Vzdálenost od vrchního okraje */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
     font-family: Arial, sans-serif;
     font-size: 3em;
-    margin-top: 20px;
+    margin: 0;
 }
 
 /* Tělo stránky a pozadí */
@@ -19,6 +22,8 @@ body {
     height: 100vh;
     margin: 0;
     color: white;
+    flex-direction: column; /* Umožní zarovnání formu pod nadpis */
+    padding-top: 100px; /* Rezerva pro nadpis */
 }
 
 /* Formulářový box */
@@ -29,6 +34,7 @@ form {
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
     text-align: center;
     width: 350px;
+    margin-top: 50px; /* Odstup od nadpisu */
 }
 
 /* Styly pro štítky */
