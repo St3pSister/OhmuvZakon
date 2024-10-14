@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmův zákon Kalkulačka</title>
+    <title>Kalkulačka Ohmova zákona</title>
+    <script src="logic.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <script src="logic.js"></script>
 </head>
 <body>
-    <h1>Ohmův zákon Kalkulačka</h1>
+    <h1>Kalkulačka Ohmova zákona</h1>
     
-    <form id="ohms-law-form">
-        <label for="voltage">Napětí ve voltech:</label>
-        <input type="number" id="voltage" step="any"><br><br>
+    <form id="ohmuv-zakon">
+        <label for="napeti">Napětí (U) [V]:</label>
+        <input type="number" id="napeti" step="any"><br><br>
 
-        <label for="current">Proud v amperech:</label>
-        <input type="number" id="current" step="any"><br><br>
+        <label for="proud">Proud (I) [A]:</label>
+        <input type="number" id="proud" step="any"><br><br>
 
-        <label for="resistance">Odpor v ohmech:</label>
-        <input type="number" id="resistance" step="any"><br><br>
+        <label for="odpor">Odpor (R) [Ω]:</label>
+        <input type="number" id="odpor" step="any"><br><br>
 
-        <button type="button" onclick="calculateOhmsLaw()">Vypočítat</button>
+        <button type="button" onclick="vypocetohmovazakona()">Vypočítat</button>
     </form>
 
-    <h2>Výsledek:</h2>
     <p id="result"></p>
-
-
+    <p id="Chyba" style="color:red;"></p> <!-- Zobrazování chybové zprávy -->
 </body>
 </html>

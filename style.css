@@ -1,0 +1,92 @@
+/* Hlavní nadpis */
+h1 {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+/* Tělo stránky a pozadí */
+body {
+    background-image: url("images/1_OAXivevUVDA6ddtq-7jwVw.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+/* Formulářový box */
+form {
+    background-color: rgba(0, 0, 0, 0.7); /* Poloprůhledné pozadí */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    width: 350px;
+}
+
+/* Styly pro štítky */
+label {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    text-align: left;
+}
+
+/* Vstupní pole */
+input[type="number"] {
+    width: calc(100% - 20px); /* Vypočtená šířka pro symetrii */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Tlačítko */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+/* Chybová zpráva */
+#Chyba {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Výsledek */
+#result {
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Rozšíření pro lepší rozložení vstupních polí */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
